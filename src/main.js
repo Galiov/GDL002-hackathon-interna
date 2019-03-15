@@ -88,7 +88,7 @@ search.addEventListener("click", function () {
 	showFilterSearch(search);});
     setTimeout(showFilterSearch, 500);
 
-function showFilterMexican(genero){
+function showFilterMexican(country){
 	let divMoviesList = document.getElementById('movie-list');
 	divMoviesList.innerHTML = "";
 	const typeResult =filterCountry(movies);
