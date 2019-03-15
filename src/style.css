@@ -20,6 +20,7 @@ body {
 }
 
 .logo{
+    width: 10rem;
     top: 0;
     left: 0;
     text-align: left;
@@ -27,7 +28,7 @@ body {
 }
 
 .logo-img{
-    padding: 0.3rem 3rem 0rem 1rem;
+    padding: 0.3rem 3rem 0rem 0.5rem;
     height: 5rem;
 }
 .search{
