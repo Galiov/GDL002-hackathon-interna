@@ -31,6 +31,8 @@ function showFilter(decade){
 	moviePoster(typeResult);
 	return typeResult;
 }
+
+
 //Interacción con botones por década que llaman a la función de década
 const m60s = document.getElementById("1960");
 m60s.addEventListener("click", function () {
@@ -85,3 +87,17 @@ const search = document.getElementById("search-button");
 search.addEventListener("click", function () {
 	showFilterSearch(search);});
     setTimeout(showFilterSearch, 500);
+
+function showFilterMexican(genero){
+	let divMoviesList = document.getElementById('movie-list');
+	divMoviesList.innerHTML = "";
+	const typeResult =filterCountry(movies);
+	moviePoster(typeResult);
+	return typeResult;
+}
+
+
+const mexican = document.getElementById("Mexican");
+mexican.addEventListener("click", function () {
+	showFilterMexican(mexican);});
+
